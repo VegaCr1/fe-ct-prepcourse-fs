@@ -11,7 +11,7 @@ function obtenerMayor(x, y) {
          return y;
       }else{
          return x
-      }
+      }           
 
    }
 }
@@ -119,12 +119,12 @@ function esEntero(num) {
    // Ejemplo: 1     ---> true
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
-   if (num %1 == 0) {
+   /*if (num %1 == 0) {
       return true;
   } else {
       return false ;
-  }
-  
+  }**/
+  return Number.isInteger(num);
 }
 
 function fizzBuzz(num) {
@@ -188,22 +188,38 @@ function esPrimo(num) {
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
-   // Tu código:
+   if (valor ===true ) {
+      return "Soy verdadero"
+   } else {
+      return "Soy falso"
+      
+   }
 }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
-   // Tu código:
+   if (num >= 100 && num <=999) {
+      return true
+  } else {
+      return false 
+      
+  }
 }
 
 function doWhile(num) {
    // Implementar una función que aumente el valor recibido en 5 hasta un límite de 8 veces.
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
-   // Tu código:
-}
+   var i=0;
+    var a =num;
+    do {
+        i = i +1; 
+        a = a + 5 ;   
+    } while (i<8);
 
+    return a;
+}
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    obtenerMayor,
