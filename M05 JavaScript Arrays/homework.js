@@ -5,6 +5,7 @@ function devolverPrimerElemento(array) {
    return array[0]
 }
 
+
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    var distancia = array.length - 1;
@@ -30,8 +31,8 @@ function incrementarPorUno(array) {
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
-   array.push(elemento)
-    return array
+    array.push(elemento)
+    return array;
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -183,7 +184,11 @@ function mesesDelAño(array) {
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
-   // Tu código:
+   tabla = [0];
+   for (i = 6; i <=60; (i+=6)) {
+   tabla.push(i);
+   }
+   return tabla;
 }
 
 function mayorACien(array) {
@@ -262,4 +267,3 @@ module.exports = {
    breakStatement,
    continueStatement,
 };
-
