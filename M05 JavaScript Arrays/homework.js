@@ -30,8 +30,8 @@ function incrementarPorUno(array) {
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
-   
-    return array.push(elemento)
+   array.push(elemento)
+    return array
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
